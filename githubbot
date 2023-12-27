@@ -1,0 +1,51 @@
+// GitHub Bot
+class GitHubBot {
+  constructor(name, age) {
+     this.name = name;
+     this.age = age;
+     this.isAlive = true;
+  }
+ 
+  createRepo(repoName) {
+     console.log(`${this.name} is creating a new GitHub repository named ${repoName}`);
+  }
+ 
+  pushCode(repoName) {
+     console.log(`${this.name} is pushing code to the ${repoName} repository`);
+  }
+ 
+  starRepo(repoName) {
+     console.log(`${this.name} is starring the ${repoName} repository`);
+  }
+ 
+  forkRepo(repoName) {
+     console.log(`${this.name} is forking the ${repoName} repository`);
+  }
+ 
+  issueReport(repoName) {
+     console.log(`${this.name} is creating an issue report in the ${repoName} repository`);
+  }
+ 
+  createPullRequest(repoName) {
+     console.log(`${this.name} is creating a pull request in the ${repoName} repository`);
+  }
+ 
+  killBot() {
+     this.isAlive = false;
+     console.log(`${this.name} is shutting down`);
+  }
+ }
+ 
+ // Create a new GitHub Bot
+ const githubBot = new GitHubBot('Botty', 25);
+ 
+ // AI GitHub Bot operations
+ githubBot.createRepo('my-new-repo');
+ githubBot.pushCode('my-new-repo');
+ githubBot.starRepo('my-new-repo');
+ githubBot.forkRepo('my-new-repo');
+ githubBot.issueReport('my-new-repo');
+ githubBot.createPullRequest('my-new-repo');
+ 
+ // Kill the bot
+ githubBot.killBot();
